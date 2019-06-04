@@ -1,0 +1,5 @@
+V2.3
++add Rs485 protocol:
+ protocol scription: 
+	#xPxxVxxxA : x: adress, xx: position, xxx velocity, A : acessory
+ 

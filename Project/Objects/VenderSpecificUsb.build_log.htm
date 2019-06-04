@@ -1,0 +1,903 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Phuc Tran, None, LIC=QB4Y8-3XNQQ-UY3V1-C6BRN-T75GM-FVR9X
+ 
+Tool Versions:
+Toolchain:       *** Unknown Product ***  Version: 5.23
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DARMSTM.DLL V1.68.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TARMSTM.DLL V1.66.0.0
+ 
+<h2>Project:</h2>
+C:\Users\DELL\Desktop\Linh\Firmware_msd_eh\Firmware_msd_eh\Project\DcServoDriver.uvprojx
+Project File Date:  05/20/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'STM32F103xB'
+Clean started - Project: 'DcServoDriver'
+   deleting intermediate output files for target 'STM32F103xB'
+compiling board.c...
+..\User\Header\board.h(75): warning:  #1295-D: Deprecated declaration ERROR_CurrentCheck - give arg types
+  int8_t ERROR_CurrentCheck();
+..\User\Header\board.h(83): warning:  #1-D: last line of file ends without a newline
+  void Flash_Init(void);
+..\User\Header\product_infor.h(33): warning:  #1-D: last line of file ends without a newline
+  }PRODUCT_INFOR;
+..\User\Header\crc.h(4): warning:  #1-D: last line of file ends without a newline
+  uint8_t crc8(unsigned crc, unsigned char *data, uint32_t len);
+..\User\Source\board.c(206): warning:  #177-D: variable "dirRemember"  was declared but never referenced
+        static uint8_t dirRemember;
+..\User\Source\board.c(260): warning:  #188-D: enumerated type mixed with another type
+                                HAL_GPIO_WritePin(
+ED_GPIO_PORT,
+ED_GREEN_GPIO_PIN,0);
+..\User\Source\board.c(263): warning:  #188-D: enumerated type mixed with another type
+                                HAL_GPIO_WritePin(
+ED_GPIO_PORT,
+ED_RED_GPIO_PIN,0);
+..\User\Source\board.c(266): warning:  #188-D: enumerated type mixed with another type
+                                HAL_GPIO_WritePin(
+ED_GPIO_PORT,
+ED_GREEN_GPIO_PIN,1);
+..\User\Source\board.c(269): warning:  #188-D: enumerated type mixed with another type
+                                HAL_GPIO_WritePin(
+ED_GPIO_PORT,
+ED_RED_GPIO_PIN,1);
+..\User\Source\board.c(272): warning:  #188-D: enumerated type mixed with another type
+                                HAL_GPIO_WritePin(
+ED_GPIO_PORT,
+ED_GREEN_GPIO_PIN,1);
+..\User\Source\board.c(273): warning:  #188-D: enumerated type mixed with another type
+                                HAL_GPIO_WritePin(
+ED_GPIO_PORT,
+ED_RED_GPIO_PIN,1);
+..\User\Source\board.c(274): warning:  #188-D: enumerated type mixed with another type
+                                HAL_GPIO_WritePin(
+ED_GPIO_PORT,
+ED_YELLOW_GPIO_PIN,0);
+..\User\Source\board.c(278): warning:  #188-D: enumerated type mixed with another type
+                                HAL_GPIO_WritePin(
+ED_GPIO_PORT,
+ED_GREEN_GPIO_PIN,1);
+..\User\Source\board.c(279): warning:  #188-D: enumerated type mixed with another type
+                                HAL_GPIO_WritePin(
+ED_GPIO_PORT,
+ED_RED_GPIO_PIN,1);
+..\User\Source\board.c(280): warning:  #188-D: enumerated type mixed with another type
+                                HAL_GPIO_WritePin(
+ED_GPIO_PORT,
+ED_YELLOW_GPIO_PIN,1);
+..\User\Source\board.c(283): warning:  #940-D: missing return statement at end of non-void function "LED_StatusDislay" 
+  }
+..\User\Source\board.c(301): warning:  #223-D: function "CRC8_Generate" declared implicitly
+    aCrc = CRC8_Generate(0,(uint8_t*)&asDataHwInfor,sizeof(DATA_HW_INFOR));
+..\User\Source\board.c(322): warning:  #940-D: missing return statement at end of non-void function "MOTOR_ControlDir" 
+  }
+..\User\Source\board.c(475): warning:  #940-D: missing return statement at end of non-void function "SOURCE_Read" 
+  }
+..\User\Source\board.c(454): warning:  #177-D: variable "flagRememberCurrent"  was declared but never referenced
+        static uint16_t flagRememberCurrent=0 ;
+..\User\Source\board.c(683): warning:  #167-D: argument of type "volatile uint16_t *" is incompatible with parameter of type "uint16_t *"
+        SORT_Tab(&aaADC_Buffer[5],5);
+..\User\Source\board.c(718): warning:  #940-D: missing return statement at end of non-void function "ERROR_CurrentCheck" 
+  }
+..\User\Source\board.c(680): warning:  #177-D: variable "aCurrentOffset"  was declared but never referenced
+        static int16_t aCurrentOffset=0;
+..\User\Source\board.c: 23 warnings, 0 errors
+compiling CloseLoopControl.c...
+..\User\Header\CloseLoopControl.h(21): warning:  #1295-D: Deprecated declaration LoopEnable - give arg types
+  void LoopEnable();
+..\User\Header\CloseLoopControl.h(28): warning:  #1-D: last line of file ends without a newline
+  void PidPiPi_PositionControl(void);
+..\User\Header\board.h(75): warning:  #1295-D: Deprecated declaration ERROR_CurrentCheck - give arg types
+  int8_t ERROR_CurrentCheck();
+..\User\Header\board.h(83): warning:  #1-D: last line of file ends without a newline
+  void Flash_Init(void);
+..\User\Header\EncoderIncremental.h(21): warning:  #1-D: last line of file ends without a newline
+  void ENCODER_Read(void);
+..\User\Header\ExternalCounter.h(32): warning:  #1-D: last line of file ends without a newline
+  void ProcessExtEnable(void);
+..\User\Source\CloseLoopControl.c(74): warning:  #177-D: variable "ret"  was declared but never referenced
+        int8_t ret =0;
+..\User\Source\CloseLoopControl.c(277): warning:  #177-D: variable "upV"  was declared but never referenced
+          static float upV,uiV,upI,uiI, pidV_Out, pidI_Out;
+..\User\Source\CloseLoopControl.c(277): warning:  #177-D: variable "uiV"  was declared but never referenced
+          static float upV,uiV,upI,uiI, pidV_Out, pidI_Out;
+..\User\Source\CloseLoopControl.c(353): warning:  #177-D: variable "upI"  was declared but never referenced
+          static float upV,uiV,upI,uiI, pidV_Out, pidI_Out;
+..\User\Source\CloseLoopControl.c(353): warning:  #177-D: variable "uiI"  was declared but never referenced
+          static float upV,uiV,upI,uiI, pidV_Out, pidI_Out;
+..\User\Source\CloseLoopControl.c(353): warning:  #177-D: variable "pidI_Out"  was declared but never referenced
+          static float upV,uiV,upI,uiI, pidV_Out, pidI_Out;
+..\User\Source\CloseLoopControl.c(458): warning:  #177-D: variable "wSetTerm"  was declared but never referenced
+     double wSetTerm;
+..\User\Source\CloseLoopControl.c(509): warning:  #177-D: variable "kTerm"  was declared but never referenced
+        float kTerm;
+..\User\Source\CloseLoopControl.c(513): warning:  #177-D: variable "pidFirts"  was declared but never referenced
+        static float pidFirts, overPID;
+..\User\Source\CloseLoopControl.c(513): warning:  #177-D: variable "overPID"  was declared but never referenced
+        static float pidFirts, overPID;
+..\User\Source\CloseLoopControl.c(638): warning:  #177-D: variable "kTerm"  was declared but never referenced
+        float kTerm;
+..\User\Source\CloseLoopControl.c(639): warning:  #550-D: variable "stopped"  was set but never used
+        static char stopped =0;
+..\User\Source\CloseLoopControl.c(642): warning:  #177-D: variable "uiP"  was declared but never referenced
+        static float upP,uiP,udP,upV,uiV,udV,upI,uiI, pidP_Out,pidV_Out,pidI_Out;
+..\User\Source\CloseLoopControl.c(642): warning:  #177-D: variable "udV"  was declared but never referenced
+        static float upP,uiP,udP,upV,uiV,udV,upI,uiI, pidP_Out,pidV_Out,pidI_Out;
+..\User\Source\CloseLoopControl.c(642): warning:  #177-D: variable "upI"  was declared but never referenced
+        static float upP,uiP,udP,upV,uiV,udV,upI,uiI, pidP_Out,pidV_Out,pidI_Out;
+..\User\Source\CloseLoopControl.c(642): warning:  #177-D: variable "uiI"  was declared but never referenced
+        static float upP,uiP,udP,upV,uiV,udV,upI,uiI, pidP_Out,pidV_Out,pidI_Out;
+..\User\Source\CloseLoopControl.c(642): warning:  #177-D: variable "pidI_Out"  was declared but never referenced
+        static float upP,uiP,udP,upV,uiV,udV,upI,uiI, pidP_Out,pidV_Out,pidI_Out;
+..\User\Source\CloseLoopControl.c(643): warning:  #177-D: variable "aVelocityOldErr"  was declared but never referenced
+        static float velocityError,aVelocityOldErr;
+..\User\Source\CloseLoopControl.c(644): warning:  #177-D: variable "kAnti"  was declared but never referenced
+        static float kAnti;
+..\User\Source\CloseLoopControl.c(815): warning:  #550-D: variable "stopped"  was set but never used
+        static char stopped =0;
+..\User\Source\CloseLoopControl.c(817): warning:  #177-D: variable "pidOld"  was declared but never referenced
+        static float pidOld,pid,a0,a1,a2;
+..\User\Source\CloseLoopControl.c(1036): warning:  #177-D: variable "k"  was declared but never referenced
+        unsigned int i, k, ret;
+..\User\Source\CloseLoopControl.c(1049): warning:  #550-D: variable "delta_temp"  was set but never used
+        float delta_p_z_2[300] = {0}, delta_temp[300] = {0};
+..\User\Source\CloseLoopControl.c(1296): warning:  #550-D: variable "a0"  was set but never used
+        static float pid,a0,a1,a2;
+..\User\Source\CloseLoopControl.c(1296): warning:  #550-D: variable "a1"  was set but never used
+        static float pid,a0,a1,a2;
+..\User\Source\CloseLoopControl.c(1296): warning:  #177-D: variable "a2"  was declared but never referenced
+        static float pid,a0,a1,a2;
+..\User\Source\CloseLoopControl.c(1555): warning:  #1-D: last line of file ends without a newline
+  }
+..\User\Source\CloseLoopControl.c: 33 warnings, 0 errors
+compiling command.c...
+..\User\Header\transfer.h(27): warning:  #1-D: last line of file ends without a newline
+  void PAYLOAD_DatasCommingProcess(uint8_t* pData,uint16_t len);
+..\User\Header\product_infor.h(33): warning:  #1-D: last line of file ends without a newline
+  }PRODUCT_INFOR;
+..\User\Header\crc.h(4): warning:  #1-D: last line of file ends without a newline
+  uint8_t crc8(unsigned crc, unsigned char *data, uint32_t len);
+..\User\Header\board.h(75): warning:  #1295-D: Deprecated declaration ERROR_CurrentCheck - give arg types
+  int8_t ERROR_CurrentCheck();
+..\User\Header\board.h(83): warning:  #1-D: last line of file ends without a newline
+  void Flash_Init(void);
+..\User\Source\command.c(105): warning:  #940-D: missing return statement at end of non-void function "CMD_StringMessage" 
+  }
+..\User\Source\command.c(109): warning:  #940-D: missing return statement at end of non-void function "CMD_ResetMcu" 
+  }
+..\User\Source\command.c(141): warning:  #940-D: missing return statement at end of non-void function "CMD_WriteFwprVersion" 
+  }
+..\User\Source\command.c(156): warning:  #940-D: missing return statement at end of non-void function "TURNING_Respont" 
+  }
+..\User\Source\command.c(154): warning:  #550-D: variable "ret"  was set but never used
+        int8_t ret =0;
+..\User\Source\command.c(160): warning:  #940-D: missing return statement at end of non-void function "CMD_GetSmartInfor" 
+  }
+..\User\Source\command.c(158): warning:  #550-D: variable "ret"  was set but never used
+        int8_t ret =0;
+..\User\Source\command.c(163): warning:  #177-D: variable "timeOut"  was declared but never referenced
+        int timeOut =3000;      //3000(ms)
+..\User\Source\command.c(173): warning:  #188-D: enumerated type mixed with another type
+    asStateMechine.asRunningMode = asPayloadRx.data[0];
+..\User\Source\command.c(238): warning:  #940-D: missing return statement at end of non-void function "CMD_GetSourceVoltage" 
+  }
+..\User\Source\command.c(243): warning:  #188-D: enumerated type mixed with another type
+                
+C_ENABLE();
+..\User\Source\command.c(260): warning:  #188-D: enumerated type mixed with another type
+        
+C_ENABLE();
+..\User\Source\command.c(267): warning:  #188-D: enumerated type mixed with another type
+        
+C_DISABLE();
+..\User\Source\command.c(279): warning:  #111-D: statement is unreachable
+        break;
+..\User\Source\command.c(372): warning:  #188-D: enumerated type mixed with another type
+        asStateMechine.asCmType = asPayloadRx.data[0];
+..\User\Source\command.c(383): warning:  #940-D: missing return statement at end of non-void function "CMD_BootLoaderJum" 
+  }
+..\User\Source\command.c(422): warning:  #223-D: function "ENCODER_Reset" declared implicitly
+                        ENCODER_Reset();
+..\User\Source\command.c(440): warning:  #1-D: last line of file ends without a newline
+  }
+..\User\Source\command.c: 23 warnings, 0 errors
+compiling crc.c...
+..\User\Header\crc.h(4): warning:  #1-D: last line of file ends without a newline
+  uint8_t crc8(unsigned crc, unsigned char *data, uint32_t len);
+..\User\Source\crc.c(74): warning:  #1-D: last line of file ends without a newline
+  */
+..\User\Source\crc.c: 2 warnings, 0 errors
+compiling delay.c...
+compiling EncoderIncremental.c...
+..\User\Header\EncoderIncremental.h(21): warning:  #1-D: last line of file ends without a newline
+  void ENCODER_Read(void);
+..\User\Header\status.h(12): warning:  #1-D: last line of file ends without a newline
+  extern volatile DRIVER_STATUS Dc_ServoStatus;
+..\User\Source\EncoderIncremental.c(51): warning:  #940-D: missing return statement at end of non-void function "ENCODER_Init" 
+  }
+..\User\Source\EncoderIncremental.c(69): warning:  #1-D: last line of file ends without a newline
+  }
+..\User\Source\EncoderIncremental.c: 4 warnings, 0 errors
+compiling error.c...
+..\User\Header\CloseLoopControl.h(21): warning:  #1295-D: Deprecated declaration LoopEnable - give arg types
+  void LoopEnable();
+..\User\Header\CloseLoopControl.h(28): warning:  #1-D: last line of file ends without a newline
+  void PidPiPi_PositionControl(void);
+..\User\Header\board.h(75): warning:  #1295-D: Deprecated declaration ERROR_CurrentCheck - give arg types
+  int8_t ERROR_CurrentCheck();
+..\User\Header\board.h(83): warning:  #1-D: last line of file ends without a newline
+  void Flash_Init(void);
+..\User\Header\EncoderIncremental.h(21): warning:  #1-D: last line of file ends without a newline
+  void ENCODER_Read(void);
+..\User\Header\transfer.h(27): warning:  #1-D: last line of file ends without a newline
+  void PAYLOAD_DatasCommingProcess(uint8_t* pData,uint16_t len);
+..\User\Source\error.c(29): warning:  #940-D: missing return statement at end of non-void function "ERROR_PhaseCheck" 
+  }
+..\User\Source\error.c: 7 warnings, 0 errors
+compiling ExternalCounter.c...
+..\User\Header\ExternalCounter.h(32): warning:  #1-D: last line of file ends without a newline
+  void ProcessExtEnable(void);
+..\User\Source\ExternalCounter.c(70): warning:  #177-D: variable "sClockConfigType"  was declared but never referenced
+                        TIM_ClockConfigTypeDef sClockConfigType;
+..\User\Source\ExternalCounter.c(216): warning:  #177-D: variable "aCountRead"  was declared but never referenced
+        static uint64_t aCountRead=0;
+..\User\Source\ExternalCounter.c(247): warning:  #1-D: last line of file ends without a newline
+  }
+..\User\Source\ExternalCounter.c: 4 warnings, 0 errors
+compiling main.c...
+..\User\Header\product_infor.h(33): warning:  #1-D: last line of file ends without a newline
+  }PRODUCT_INFOR;
+..\User\Header\EncoderIncremental.h(21): warning:  #1-D: last line of file ends without a newline
+  void ENCODER_Read(void);
+..\User\Header\CloseLoopControl.h(21): warning:  #1295-D: Deprecated declaration LoopEnable - give arg types
+  void LoopEnable();
+..\User\Header\CloseLoopControl.h(28): warning:  #1-D: last line of file ends without a newline
+  void PidPiPi_PositionControl(void);
+..\User\Header\transfer.h(27): warning:  #1-D: last line of file ends without a newline
+  void PAYLOAD_DatasCommingProcess(uint8_t* pData,uint16_t len);
+..\User\Header\ExternalCounter.h(32): warning:  #1-D: last line of file ends without a newline
+  void ProcessExtEnable(void);
+..\User\Header\board.h(75): warning:  #1295-D: Deprecated declaration ERROR_CurrentCheck - give arg types
+  int8_t ERROR_CurrentCheck();
+..\User\Header\board.h(83): warning:  #1-D: last line of file ends without a newline
+  void Flash_Init(void);
+..\User\Source\main.c(126): warning:  #188-D: enumerated type mixed with another type
+    
+C_ENABLE();
+..\User\Source\main.c(144): warning:  #167-D: argument of type "volatile uint8_t *" is incompatible with parameter of type "uint8_t *"
+                                                                                        PAYLOAD_Process(aaUsbBufferOut);
+..\User\Source\main.c(162): warning:  #223-D: function "TURNING_Respont" declared implicitly
+                                                                                TURNING_Respont();
+..\User\Source\main.c(180): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+                                                                                sprintf(buffer,"A%d P%d \n",asDataHwInfor.aAdd, (int32_t)(1000*asRuningInforCurrent.aPosition));
+..\User\Source\main.c(181): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                                                                                UartSendData(buffer,strlen(buffer));
+..\User\Source\main.c: 13 warnings, 0 errors
+compiling rs485.c...
+..\User\Header\transfer.h(27): warning:  #1-D: last line of file ends without a newline
+  void PAYLOAD_DatasCommingProcess(uint8_t* pData,uint16_t len);
+..\User\Header\product_infor.h(33): warning:  #1-D: last line of file ends without a newline
+  }PRODUCT_INFOR;
+..\User\Header\crc.h(4): warning:  #1-D: last line of file ends without a newline
+  uint8_t crc8(unsigned crc, unsigned char *data, uint32_t len);
+..\User\Source\rs485.c(77): warning:  #940-D: missing return statement at end of non-void function "RS485_TimeInit" 
+  }
+..\User\Source\rs485.c(142): warning:  #940-D: missing return statement at end of non-void function "RS485_Init" 
+  }
+..\User\Source\rs485.c(194): warning:  #223-D: function "STRING_Process" declared implicitly
+        STRING_Process(aaRs485Buffer);
+..\User\Source\rs485.c(208): warning:  #940-D: missing return statement at end of non-void function "UartSendData" 
+  }
+..\User\Source\rs485.c(211): warning:  #188-D: enumerated type mixed with another type
+        
+S485_OUT();
+..\User\Source\rs485.c(213): warning:  #188-D: enumerated type mixed with another type
+        
+S485_IN();
+..\User\Source\rs485.c(214): warning:  #940-D: missing return statement at end of non-void function "RS485_SendAckNACK" 
+  }
+..\User\Source\rs485.c(222): warning:  #188-D: enumerated type mixed with another type
+                                        
+S485_OUT();
+..\User\Source\rs485.c(242): warning:  #940-D: missing return statement at end of non-void function "RS485_Polling" 
+  }
+..\User\Source\rs485.c(217): warning:  #177-D: variable "i"  was declared but never referenced
+        int i,j;
+..\User\Source\rs485.c(217): warning:  #177-D: variable "j"  was declared but never referenced
+        int i,j;
+..\User\Source\rs485.c(248): warning:  #188-D: enumerated type mixed with another type
+        
+S485_OUT();
+..\User\Source\rs485.c(264): warning:  #188-D: enumerated type mixed with another type
+                
+S485_IN();
+..\User\Source\rs485.c(275): warning:  #188-D: enumerated type mixed with another type
+        
+S485_OUT();
+..\User\Source\rs485.c(277): warning:  #1-D: last line of file ends without a newline
+  }
+..\User\Source\rs485.c: 18 warnings, 0 errors
+compiling status.c...
+..\User\Header\status.h(12): warning:  #1-D: last line of file ends without a newline
+  extern volatile DRIVER_STATUS Dc_ServoStatus;
+..\User\Source\status.c: 1 warning, 0 errors
+compiling stm32f1xx_it.c...
+..\User\Header\product_infor.h(33): warning:  #1-D: last line of file ends without a newline
+  }PRODUCT_INFOR;
+..\User\Header\EncoderIncremental.h(21): warning:  #1-D: last line of file ends without a newline
+  void ENCODER_Read(void);
+..\User\Header\CloseLoopControl.h(21): warning:  #1295-D: Deprecated declaration LoopEnable - give arg types
+  void LoopEnable();
+..\User\Header\CloseLoopControl.h(28): warning:  #1-D: last line of file ends without a newline
+  void PidPiPi_PositionControl(void);
+..\User\Header\transfer.h(27): warning:  #1-D: last line of file ends without a newline
+  void PAYLOAD_DatasCommingProcess(uint8_t* pData,uint16_t len);
+..\User\Header\ExternalCounter.h(32): warning:  #1-D: last line of file ends without a newline
+  void ProcessExtEnable(void);
+..\User\Source\stm32f1xx_it.c: 6 warnings, 0 errors
+compiling string_user.c...
+..\User\Header\transfer.h(27): warning:  #1-D: last line of file ends without a newline
+  void PAYLOAD_DatasCommingProcess(uint8_t* pData,uint16_t len);
+..\User\Header\product_infor.h(33): warning:  #1-D: last line of file ends without a newline
+  }PRODUCT_INFOR;
+..\User\Header\crc.h(4): warning:  #1-D: last line of file ends without a newline
+  uint8_t crc8(unsigned crc, unsigned char *data, uint32_t len);
+..\User\Source\string_user.c(45): warning:  #167-D: argument of type "int8_t *" is incompatible with parameter of type "const char *"
+        len = strlen(pData);
+..\User\Source\string_user.c(49): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                if(asDataHwInfor.aAdd != atoi(pTerm+1)){
+..\User\Source\string_user.c(66): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+                                                                        asRuningInforSet.aPosition = strtod(pTerm,&pTerm1);
+..\User\Source\string_user.c(66): warning:  #167-D: argument of type "uint8_t **" is incompatible with parameter of type "char **restrict"
+                                                                        asRuningInforSet.aPosition = strtod(pTerm,&pTerm1);
+..\User\Source\string_user.c(73): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+                                                                        asRuningInforSet.aVelocity = strtod(pTerm,&pTerm1);
+..\User\Source\string_user.c(73): warning:  #167-D: argument of type "uint8_t **" is incompatible with parameter of type "char **restrict"
+                                                                        asRuningInforSet.aVelocity = strtod(pTerm,&pTerm1);
+..\User\Source\string_user.c(80): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+                                                                        asRuningInforSet.aAccel = strtod(pTerm,&pTerm1);
+..\User\Source\string_user.c(80): warning:  #167-D: argument of type "uint8_t **" is incompatible with parameter of type "char **restrict"
+                                                                        asRuningInforSet.aAccel = strtod(pTerm,&pTerm1);
+..\User\Source\string_user.c(92): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                                        timeUpdateToHost = atoi(pTerm);
+..\User\Source\string_user.c(120): warning:  #1-D: last line of file ends without a newline
+  }
+..\User\Source\string_user.c(44): warning:  #177-D: variable "failCmd"  was declared but never referenced
+        uint8_t failCmd =0;     double aTerm; uint8_t len;
+..\User\Source\string_user.c(44): warning:  #177-D: variable "aTerm"  was declared but never referenced
+        uint8_t failCmd =0;     double aTerm; uint8_t len;
+..\User\Source\string_user.c: 15 warnings, 0 errors
+compiling transfer.c...
+..\User\Header\transfer.h(27): warning:  #1-D: last line of file ends without a newline
+  void PAYLOAD_DatasCommingProcess(uint8_t* pData,uint16_t len);
+..\User\Header\crc.h(4): warning:  #1-D: last line of file ends without a newline
+  uint8_t crc8(unsigned crc, unsigned char *data, uint32_t len);
+..\User\Source\transfer.c: 2 warnings, 0 errors
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_adc.c...
+compiling stm32f1xx_hal_adc_ex.c...
+compiling stm32f1xx_hal_can.c...
+compiling stm32f1xx_hal_cec.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_crc.c...
+compiling stm32f1xx_hal_dac.c...
+compiling stm32f1xx_hal_dac_ex.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_eth.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_hal_hcd.c...
+compiling stm32f1xx_hal_i2c.c...
+compiling stm32f1xx_hal_i2s.c...
+compiling stm32f1xx_hal_irda.c...
+compiling stm32f1xx_hal_iwdg.c...
+compiling stm32f1xx_hal_msp_template.c...
+compiling stm32f1xx_hal_nand.c...
+compiling stm32f1xx_hal_nor.c...
+compiling stm32f1xx_hal_pccard.c...
+compiling stm32f1xx_hal_pcd.c...
+compiling stm32f1xx_hal_pcd_ex.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_rtc.c...
+compiling stm32f1xx_hal_rtc_ex.c...
+compiling stm32f1xx_hal_sd.c...
+compiling stm32f1xx_hal_smartcard.c...
+compiling stm32f1xx_hal_spi.c...
+compiling stm32f1xx_hal_spi_ex.c...
+compiling stm32f1xx_hal_sram.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_uart.c...
+compiling stm32f1xx_hal_usart.c...
+compiling stm32f1xx_hal_wwdg.c...
+compiling stm32f1xx_ll_fsmc.c...
+compiling stm32f1xx_ll_sdmmc.c...
+compiling stm32f1xx_ll_usb.c...
+compiling system_stm32f1xx.c...
+assembling startup_stm32f103xb.s...
+compiling usbd_core.c...
+compiling usbd_ctlreq.c...
+compiling usbd_ioreq.c...
+compiling usbd_conf.c...
+..\User\Header\product_infor.h(33): warning:  #1-D: last line of file ends without a newline
+  }PRODUCT_INFOR;
+..\User\Header\EncoderIncremental.h(21): warning:  #1-D: last line of file ends without a newline
+  void ENCODER_Read(void);
+..\User\Header\CloseLoopControl.h(21): warning:  #1295-D: Deprecated declaration LoopEnable - give arg types
+  void LoopEnable();
+..\User\Header\CloseLoopControl.h(28): warning:  #1-D: last line of file ends without a newline
+  void PidPiPi_PositionControl(void);
+..\User\Header\transfer.h(27): warning:  #1-D: last line of file ends without a newline
+  void PAYLOAD_DatasCommingProcess(uint8_t* pData,uint16_t len);
+..\User\Header\ExternalCounter.h(32): warning:  #1-D: last line of file ends without a newline
+  void ProcessExtEnable(void);
+..\Lib\STM32_USB_Device_Library\Core\Src\usbd_conf.c: 6 warnings, 0 errors
+compiling usbd_specific.c...
+..\Lib\STM32_USB_Device_Library\Class\VendorSpecific\Src\usbd_specific.c(276): warning:  #167-D: argument of type "volatile uint8_t *" is incompatible with parameter of type "uint8_t *"
+                             aaUsbBufferOut,                        
+..\Lib\STM32_USB_Device_Library\Class\VendorSpecific\Src\usbd_specific.c(280): warning:  #167-D: argument of type "volatile uint8_t *" is incompatible with parameter of type "uint8_t *"
+                             aaUsbBufferOut,                        
+..\Lib\STM32_USB_Device_Library\Class\VendorSpecific\Src\usbd_specific.c(338): warning:  #111-D: statement is unreachable
+      break;
+..\Lib\STM32_USB_Device_Library\Class\VendorSpecific\Src\usbd_specific.c(470): warning:  #167-D: argument of type "volatile uint8_t *" is incompatible with parameter of type "uint8_t *"
+                                USBD_LL_PrepareReceive(pdev,
+PENCIFIC_EPOUT1_ADDR,aaUsbBufferOut,
+PENCIFIC_EPOUT1_MAX_SIZE); 
+..\Lib\STM32_USB_Device_Library\Class\VendorSpecific\Src\usbd_specific.c(473): warning:  #167-D: argument of type "volatile uint8_t *" is incompatible with parameter of type "uint8_t *"
+                                USBD_LL_PrepareReceive(pdev,
+PENCIFIC_EPOUT2_ADDR,aaUsbBufferOut,
+PENCIFIC_EPOUT2_MAX_SIZE); 
+..\Lib\STM32_USB_Device_Library\Class\VendorSpecific\Src\usbd_specific.c(324): warning:  #177-D: function "USBD_SPENCIFIC_Setup"  was declared but never referenced
+  static uint8_t  USBD_SPENCIFIC_Setup (USBD_HandleTypeDef *pdev, 
+..\Lib\STM32_USB_Device_Library\Class\VendorSpecific\Src\usbd_specific.c(400): warning:  #177-D: function "USBD_SPENCIFIC_EP0_RxReady"  was declared but never referenced
+  static uint8_t  USBD_SPENCIFIC_EP0_RxReady (USBD_HandleTypeDef *pdev)
+..\Lib\STM32_USB_Device_Library\Class\VendorSpecific\Src\usbd_specific.c(411): warning:  #177-D: function "USBD_SPENCIFIC_EP0_TxReady"  was declared but never referenced
+  static uint8_t  USBD_SPENCIFIC_EP0_TxReady (USBD_HandleTypeDef *pdev)
+..\Lib\STM32_USB_Device_Library\Class\VendorSpecific\Src\usbd_specific.c(422): warning:  #177-D: function "USBD_SPENCIFIC_SOF"  was declared but never referenced
+  static uint8_t  USBD_SPENCIFIC_SOF (USBD_HandleTypeDef *pdev)
+..\Lib\STM32_USB_Device_Library\Class\VendorSpecific\Src\usbd_specific.c(434): warning:  #177-D: function "USBD_SPENCIFIC_IsoINIncomplete"  was declared but never referenced
+  static uint8_t  USBD_SPENCIFIC_IsoINIncomplete (USBD_HandleTypeDef *pdev, uint8_t epnum)
+..\Lib\STM32_USB_Device_Library\Class\VendorSpecific\Src\usbd_specific.c(446): warning:  #177-D: function "USBD_SPENCIFIC_IsoOutIncomplete"  was declared but never referenced
+  static uint8_t  USBD_SPENCIFIC_IsoOutIncomplete (USBD_HandleTypeDef *pdev, uint8_t epnum)
+..\Lib\STM32_USB_Device_Library\Class\VendorSpecific\Src\usbd_specific.c: 11 warnings, 0 errors
+compiling usbd_spencific_desc.c...
+..\Lib\STM32_USB_Device_Library\Class\VendorSpecific\Inc\usbd_conf_spencific.h(57): warning:  #47-D: incompatible redefinition of macro "USBD_DEBUG_LEVEL"  (declared at line 46 of "..\Lib\STM32_USB_Device_Library\Core\Inc\usbd_conf.h")
+  #define USBD_DEBUG_LEVEL                      2
+..\Lib\STM32_USB_Device_Library\Class\VendorSpecific\Inc\usbd_conf_spencific.h(78): warning:  #47-D: incompatible redefinition of macro "USBD_malloc"  (declared at line 59 of "..\Lib\STM32_USB_Device_Library\Core\Inc\usbd_conf.h")
+  #define USBD_malloc               malloc
+..\Lib\STM32_USB_Device_Library\Class\VendorSpecific\Inc\usbd_conf_spencific.h(79): warning:  #47-D: incompatible redefinition of macro "USBD_free"  (declared at line 60 of "..\Lib\STM32_USB_Device_Library\Core\Inc\usbd_conf.h")
+  #define USBD_free                 free
+..\Lib\STM32_USB_Device_Library\Class\VendorSpecific\Inc\usbd_conf_spencific.h(80): warning:  #47-D: incompatible redefinition of macro "USBD_memset"  (declared at line 61 of "..\Lib\STM32_USB_Device_Library\Core\Inc\usbd_conf.h")
+  #define USBD_memset               memset
+..\Lib\STM32_USB_Device_Library\Class\VendorSpecific\Inc\usbd_conf_spencific.h(81): warning:  #47-D: incompatible redefinition of macro "USBD_memcpy"  (declared at line 62 of "..\Lib\STM32_USB_Device_Library\Core\Inc\usbd_conf.h")
+  #define USBD_memcpy               memcpy
+..\Lib\STM32_USB_Device_Library\Class\VendorSpecific\Inc\usbd_conf_spencific.h(87): warning:  #47-D: incompatible redefinition of macro "USBD_UsrLog"  (declared at line 70 of "..\Lib\STM32_USB_Device_Library\Core\Inc\usbd_conf.h")
+  #define  USBD_UsrLog(...)   printf(__VA_ARGS__);\
+..\Lib\STM32_USB_Device_Library\Class\VendorSpecific\Src\usbd_spencific_desc.c: 6 warnings, 0 errors
+compiling usbd_cdc.c...
+..\Lib\STM32_USB_Device_Library\Class\CDC_Interface\source\usbd_cdc.c(649): warning:  #940-D: missing return statement at end of non-void function "USBD_CDC_GetHSCfgDesc" 
+  }
+..\Lib\STM32_USB_Device_Library\Class\CDC_Interface\source\usbd_cdc.c(662): warning:  #940-D: missing return statement at end of non-void function "USBD_CDC_GetOtherSpeedCfgDesc" 
+  }
+..\Lib\STM32_USB_Device_Library\Class\CDC_Interface\source\usbd_cdc.c: 2 warnings, 0 errors
+compiling usbd_cdc_desc.c...
+compiling usbd_cdc_interface.c...
+..\User\Header\product_infor.h(33): warning:  #1-D: last line of file ends without a newline
+  }PRODUCT_INFOR;
+..\User\Header\EncoderIncremental.h(21): warning:  #1-D: last line of file ends without a newline
+  void ENCODER_Read(void);
+..\User\Header\CloseLoopControl.h(21): warning:  #1295-D: Deprecated declaration LoopEnable - give arg types
+  void LoopEnable();
+..\User\Header\CloseLoopControl.h(28): warning:  #1-D: last line of file ends without a newline
+  void PidPiPi_PositionControl(void);
+..\User\Header\transfer.h(27): warning:  #1-D: last line of file ends without a newline
+  void PAYLOAD_DatasCommingProcess(uint8_t* pData,uint16_t len);
+..\User\Header\ExternalCounter.h(32): warning:  #1-D: last line of file ends without a newline
+  void ProcessExtEnable(void);
+..\Lib\STM32_USB_Device_Library\Class\CDC_Interface\source\usbd_cdc_interface.c(241): warning:  #167-D: argument of type "int8_t *" is incompatible with parameter of type "uint8_t *"
+        USBD_CDC_SetTxBuffer(&hUSBDDevice, pData, size); 
+..\Lib\STM32_USB_Device_Library\Class\CDC_Interface\source\usbd_cdc_interface.c(330): warning:  #177-D: function "ComPort_Config"  was declared but never referenced
+  static void ComPort_Config(void)
+..\Lib\STM32_USB_Device_Library\Class\CDC_Interface\source\usbd_cdc_interface.c(411): warning:  #177-D: function "TIM_Config"  was declared but never referenced
+  static void TIM_Config(void)
+..\Lib\STM32_USB_Device_Library\Class\CDC_Interface\source\usbd_cdc_interface.c: 9 warnings, 0 errors
+linking...
+Program Size: Code=79240 RO-data=936 RW-data=1232 ZI-data=9768  
+".\Objects\VenderSpecificUsb.axf" - 0 Error(s), 185 Warning(s).
+
+*** Performing Cross-Module-Optimization:
+compiling board.c...
+..\User\Header\board.h(75): warning:  #1295-D: Deprecated declaration ERROR_CurrentCheck - give arg types
+  int8_t ERROR_CurrentCheck();
+..\User\Header\board.h(83): warning:  #1-D: last line of file ends without a newline
+  void Flash_Init(void);
+..\User\Header\product_infor.h(33): warning:  #1-D: last line of file ends without a newline
+  }PRODUCT_INFOR;
+..\User\Header\crc.h(4): warning:  #1-D: last line of file ends without a newline
+  uint8_t crc8(unsigned crc, unsigned char *data, uint32_t len);
+..\User\Source\board.c(206): warning:  #177-D: variable "dirRemember"  was declared but never referenced
+        static uint8_t dirRemember;
+..\User\Source\board.c(260): warning:  #188-D: enumerated type mixed with another type
+                                HAL_GPIO_WritePin(
+ED_GPIO_PORT,
+ED_GREEN_GPIO_PIN,0);
+..\User\Source\board.c(263): warning:  #188-D: enumerated type mixed with another type
+                                HAL_GPIO_WritePin(
+ED_GPIO_PORT,
+ED_RED_GPIO_PIN,0);
+..\User\Source\board.c(266): warning:  #188-D: enumerated type mixed with another type
+                                HAL_GPIO_WritePin(
+ED_GPIO_PORT,
+ED_GREEN_GPIO_PIN,1);
+..\User\Source\board.c(269): warning:  #188-D: enumerated type mixed with another type
+                                HAL_GPIO_WritePin(
+ED_GPIO_PORT,
+ED_RED_GPIO_PIN,1);
+..\User\Source\board.c(272): warning:  #188-D: enumerated type mixed with another type
+                                HAL_GPIO_WritePin(
+ED_GPIO_PORT,
+ED_GREEN_GPIO_PIN,1);
+..\User\Source\board.c(273): warning:  #188-D: enumerated type mixed with another type
+                                HAL_GPIO_WritePin(
+ED_GPIO_PORT,
+ED_RED_GPIO_PIN,1);
+..\User\Source\board.c(274): warning:  #188-D: enumerated type mixed with another type
+                                HAL_GPIO_WritePin(
+ED_GPIO_PORT,
+ED_YELLOW_GPIO_PIN,0);
+..\User\Source\board.c(278): warning:  #188-D: enumerated type mixed with another type
+                                HAL_GPIO_WritePin(
+ED_GPIO_PORT,
+ED_GREEN_GPIO_PIN,1);
+..\User\Source\board.c(279): warning:  #188-D: enumerated type mixed with another type
+                                HAL_GPIO_WritePin(
+ED_GPIO_PORT,
+ED_RED_GPIO_PIN,1);
+..\User\Source\board.c(280): warning:  #188-D: enumerated type mixed with another type
+                                HAL_GPIO_WritePin(
+ED_GPIO_PORT,
+ED_YELLOW_GPIO_PIN,1);
+..\User\Source\board.c(283): warning:  #940-D: missing return statement at end of non-void function "LED_StatusDislay" 
+  }
+..\User\Source\board.c(301): warning:  #223-D: function "CRC8_Generate" declared implicitly
+    aCrc = CRC8_Generate(0,(uint8_t*)&asDataHwInfor,sizeof(DATA_HW_INFOR));
+..\User\Source\board.c(322): warning:  #940-D: missing return statement at end of non-void function "MOTOR_ControlDir" 
+  }
+..\User\Source\board.c(475): warning:  #940-D: missing return statement at end of non-void function "SOURCE_Read" 
+  }
+..\User\Source\board.c(454): warning:  #177-D: variable "flagRememberCurrent"  was declared but never referenced
+        static uint16_t flagRememberCurrent=0 ;
+..\User\Source\board.c(683): warning:  #167-D: argument of type "volatile uint16_t *" is incompatible with parameter of type "uint16_t *"
+        SORT_Tab(&aaADC_Buffer[5],5);
+..\User\Source\board.c(718): warning:  #940-D: missing return statement at end of non-void function "ERROR_CurrentCheck" 
+  }
+..\User\Source\board.c(680): warning:  #177-D: variable "aCurrentOffset"  was declared but never referenced
+        static int16_t aCurrentOffset=0;
+..\User\Source\board.c: 23 warnings, 0 errors
+compiling CloseLoopControl.c...
+..\User\Header\CloseLoopControl.h(21): warning:  #1295-D: Deprecated declaration LoopEnable - give arg types
+  void LoopEnable();
+..\User\Header\CloseLoopControl.h(28): warning:  #1-D: last line of file ends without a newline
+  void PidPiPi_PositionControl(void);
+..\User\Header\board.h(75): warning:  #1295-D: Deprecated declaration ERROR_CurrentCheck - give arg types
+  int8_t ERROR_CurrentCheck();
+..\User\Header\board.h(83): warning:  #1-D: last line of file ends without a newline
+  void Flash_Init(void);
+..\User\Header\EncoderIncremental.h(21): warning:  #1-D: last line of file ends without a newline
+  void ENCODER_Read(void);
+..\User\Header\ExternalCounter.h(32): warning:  #1-D: last line of file ends without a newline
+  void ProcessExtEnable(void);
+..\User\Source\CloseLoopControl.c(74): warning:  #177-D: variable "ret"  was declared but never referenced
+        int8_t ret =0;
+..\User\Source\CloseLoopControl.c(277): warning:  #177-D: variable "upV"  was declared but never referenced
+          static float upV,uiV,upI,uiI, pidV_Out, pidI_Out;
+..\User\Source\CloseLoopControl.c(277): warning:  #177-D: variable "uiV"  was declared but never referenced
+          static float upV,uiV,upI,uiI, pidV_Out, pidI_Out;
+..\User\Source\CloseLoopControl.c(353): warning:  #177-D: variable "upI"  was declared but never referenced
+          static float upV,uiV,upI,uiI, pidV_Out, pidI_Out;
+..\User\Source\CloseLoopControl.c(353): warning:  #177-D: variable "uiI"  was declared but never referenced
+          static float upV,uiV,upI,uiI, pidV_Out, pidI_Out;
+..\User\Source\CloseLoopControl.c(353): warning:  #177-D: variable "pidI_Out"  was declared but never referenced
+          static float upV,uiV,upI,uiI, pidV_Out, pidI_Out;
+..\User\Source\CloseLoopControl.c(458): warning:  #177-D: variable "wSetTerm"  was declared but never referenced
+     double wSetTerm;
+..\User\Source\CloseLoopControl.c(509): warning:  #177-D: variable "kTerm"  was declared but never referenced
+        float kTerm;
+..\User\Source\CloseLoopControl.c(513): warning:  #177-D: variable "pidFirts"  was declared but never referenced
+        static float pidFirts, overPID;
+..\User\Source\CloseLoopControl.c(513): warning:  #177-D: variable "overPID"  was declared but never referenced
+        static float pidFirts, overPID;
+..\User\Source\CloseLoopControl.c(638): warning:  #177-D: variable "kTerm"  was declared but never referenced
+        float kTerm;
+..\User\Source\CloseLoopControl.c(639): warning:  #550-D: variable "stopped"  was set but never used
+        static char stopped =0;
+..\User\Source\CloseLoopControl.c(642): warning:  #177-D: variable "uiP"  was declared but never referenced
+        static float upP,uiP,udP,upV,uiV,udV,upI,uiI, pidP_Out,pidV_Out,pidI_Out;
+..\User\Source\CloseLoopControl.c(642): warning:  #177-D: variable "udV"  was declared but never referenced
+        static float upP,uiP,udP,upV,uiV,udV,upI,uiI, pidP_Out,pidV_Out,pidI_Out;
+..\User\Source\CloseLoopControl.c(642): warning:  #177-D: variable "upI"  was declared but never referenced
+        static float upP,uiP,udP,upV,uiV,udV,upI,uiI, pidP_Out,pidV_Out,pidI_Out;
+..\User\Source\CloseLoopControl.c(642): warning:  #177-D: variable "uiI"  was declared but never referenced
+        static float upP,uiP,udP,upV,uiV,udV,upI,uiI, pidP_Out,pidV_Out,pidI_Out;
+..\User\Source\CloseLoopControl.c(642): warning:  #177-D: variable "pidI_Out"  was declared but never referenced
+        static float upP,uiP,udP,upV,uiV,udV,upI,uiI, pidP_Out,pidV_Out,pidI_Out;
+..\User\Source\CloseLoopControl.c(643): warning:  #177-D: variable "aVelocityOldErr"  was declared but never referenced
+        static float velocityError,aVelocityOldErr;
+..\User\Source\CloseLoopControl.c(644): warning:  #177-D: variable "kAnti"  was declared but never referenced
+        static float kAnti;
+..\User\Source\CloseLoopControl.c(815): warning:  #550-D: variable "stopped"  was set but never used
+        static char stopped =0;
+..\User\Source\CloseLoopControl.c(817): warning:  #177-D: variable "pidOld"  was declared but never referenced
+        static float pidOld,pid,a0,a1,a2;
+..\User\Source\CloseLoopControl.c(1036): warning:  #177-D: variable "k"  was declared but never referenced
+        unsigned int i, k, ret;
+..\User\Source\CloseLoopControl.c(1049): warning:  #550-D: variable "delta_temp"  was set but never used
+        float delta_p_z_2[300] = {0}, delta_temp[300] = {0};
+..\User\Source\CloseLoopControl.c(1296): warning:  #550-D: variable "a0"  was set but never used
+        static float pid,a0,a1,a2;
+..\User\Source\CloseLoopControl.c(1296): warning:  #550-D: variable "a1"  was set but never used
+        static float pid,a0,a1,a2;
+..\User\Source\CloseLoopControl.c(1296): warning:  #177-D: variable "a2"  was declared but never referenced
+        static float pid,a0,a1,a2;
+..\User\Source\CloseLoopControl.c(1555): warning:  #1-D: last line of file ends without a newline
+  }
+..\User\Source\CloseLoopControl.c: 33 warnings, 0 errors
+compiling command.c...
+..\User\Header\transfer.h(27): warning:  #1-D: last line of file ends without a newline
+  void PAYLOAD_DatasCommingProcess(uint8_t* pData,uint16_t len);
+..\User\Header\product_infor.h(33): warning:  #1-D: last line of file ends without a newline
+  }PRODUCT_INFOR;
+..\User\Header\crc.h(4): warning:  #1-D: last line of file ends without a newline
+  uint8_t crc8(unsigned crc, unsigned char *data, uint32_t len);
+..\User\Header\board.h(75): warning:  #1295-D: Deprecated declaration ERROR_CurrentCheck - give arg types
+  int8_t ERROR_CurrentCheck();
+..\User\Header\board.h(83): warning:  #1-D: last line of file ends without a newline
+  void Flash_Init(void);
+..\User\Source\command.c(105): warning:  #940-D: missing return statement at end of non-void function "CMD_StringMessage" 
+  }
+..\User\Source\command.c(109): warning:  #940-D: missing return statement at end of non-void function "CMD_ResetMcu" 
+  }
+..\User\Source\command.c(141): warning:  #940-D: missing return statement at end of non-void function "CMD_WriteFwprVersion" 
+  }
+..\User\Source\command.c(156): warning:  #940-D: missing return statement at end of non-void function "TURNING_Respont" 
+  }
+..\User\Source\command.c(154): warning:  #550-D: variable "ret"  was set but never used
+        int8_t ret =0;
+..\User\Source\command.c(160): warning:  #940-D: missing return statement at end of non-void function "CMD_GetSmartInfor" 
+  }
+..\User\Source\command.c(158): warning:  #550-D: variable "ret"  was set but never used
+        int8_t ret =0;
+..\User\Source\command.c(163): warning:  #177-D: variable "timeOut"  was declared but never referenced
+        int timeOut =3000;      //3000(ms)
+..\User\Source\command.c(173): warning:  #188-D: enumerated type mixed with another type
+    asStateMechine.asRunningMode = asPayloadRx.data[0];
+..\User\Source\command.c(238): warning:  #940-D: missing return statement at end of non-void function "CMD_GetSourceVoltage" 
+  }
+..\User\Source\command.c(243): warning:  #188-D: enumerated type mixed with another type
+                
+C_ENABLE();
+..\User\Source\command.c(260): warning:  #188-D: enumerated type mixed with another type
+        
+C_ENABLE();
+..\User\Source\command.c(267): warning:  #188-D: enumerated type mixed with another type
+        
+C_DISABLE();
+..\User\Source\command.c(279): warning:  #111-D: statement is unreachable
+        break;
+..\User\Source\command.c(372): warning:  #188-D: enumerated type mixed with another type
+        asStateMechine.asCmType = asPayloadRx.data[0];
+..\User\Source\command.c(383): warning:  #940-D: missing return statement at end of non-void function "CMD_BootLoaderJum" 
+  }
+..\User\Source\command.c(422): warning:  #223-D: function "ENCODER_Reset" declared implicitly
+                        ENCODER_Reset();
+..\User\Source\command.c(440): warning:  #1-D: last line of file ends without a newline
+  }
+..\User\Source\command.c: 23 warnings, 0 errors
+compiling delay.c...
+compiling EncoderIncremental.c...
+..\User\Header\EncoderIncremental.h(21): warning:  #1-D: last line of file ends without a newline
+  void ENCODER_Read(void);
+..\User\Header\status.h(12): warning:  #1-D: last line of file ends without a newline
+  extern volatile DRIVER_STATUS Dc_ServoStatus;
+..\User\Source\EncoderIncremental.c(51): warning:  #940-D: missing return statement at end of non-void function "ENCODER_Init" 
+  }
+..\User\Source\EncoderIncremental.c(69): warning:  #1-D: last line of file ends without a newline
+  }
+..\User\Source\EncoderIncremental.c: 4 warnings, 0 errors
+compiling error.c...
+..\User\Header\CloseLoopControl.h(21): warning:  #1295-D: Deprecated declaration LoopEnable - give arg types
+  void LoopEnable();
+..\User\Header\CloseLoopControl.h(28): warning:  #1-D: last line of file ends without a newline
+  void PidPiPi_PositionControl(void);
+..\User\Header\board.h(75): warning:  #1295-D: Deprecated declaration ERROR_CurrentCheck - give arg types
+  int8_t ERROR_CurrentCheck();
+..\User\Header\board.h(83): warning:  #1-D: last line of file ends without a newline
+  void Flash_Init(void);
+..\User\Header\EncoderIncremental.h(21): warning:  #1-D: last line of file ends without a newline
+  void ENCODER_Read(void);
+..\User\Header\transfer.h(27): warning:  #1-D: last line of file ends without a newline
+  void PAYLOAD_DatasCommingProcess(uint8_t* pData,uint16_t len);
+..\User\Source\error.c(29): warning:  #940-D: missing return statement at end of non-void function "ERROR_PhaseCheck" 
+  }
+..\User\Source\error.c: 7 warnings, 0 errors
+compiling ExternalCounter.c...
+..\User\Header\ExternalCounter.h(32): warning:  #1-D: last line of file ends without a newline
+  void ProcessExtEnable(void);
+..\User\Source\ExternalCounter.c(70): warning:  #177-D: variable "sClockConfigType"  was declared but never referenced
+                        TIM_ClockConfigTypeDef sClockConfigType;
+..\User\Source\ExternalCounter.c(216): warning:  #177-D: variable "aCountRead"  was declared but never referenced
+        static uint64_t aCountRead=0;
+..\User\Source\ExternalCounter.c(247): warning:  #1-D: last line of file ends without a newline
+  }
+..\User\Source\ExternalCounter.c: 4 warnings, 0 errors
+compiling main.c...
+..\User\Header\product_infor.h(33): warning:  #1-D: last line of file ends without a newline
+  }PRODUCT_INFOR;
+..\User\Header\EncoderIncremental.h(21): warning:  #1-D: last line of file ends without a newline
+  void ENCODER_Read(void);
+..\User\Header\CloseLoopControl.h(21): warning:  #1295-D: Deprecated declaration LoopEnable - give arg types
+  void LoopEnable();
+..\User\Header\CloseLoopControl.h(28): warning:  #1-D: last line of file ends without a newline
+  void PidPiPi_PositionControl(void);
+..\User\Header\transfer.h(27): warning:  #1-D: last line of file ends without a newline
+  void PAYLOAD_DatasCommingProcess(uint8_t* pData,uint16_t len);
+..\User\Header\ExternalCounter.h(32): warning:  #1-D: last line of file ends without a newline
+  void ProcessExtEnable(void);
+..\User\Header\board.h(75): warning:  #1295-D: Deprecated declaration ERROR_CurrentCheck - give arg types
+  int8_t ERROR_CurrentCheck();
+..\User\Header\board.h(83): warning:  #1-D: last line of file ends without a newline
+  void Flash_Init(void);
+..\User\Source\main.c(126): warning:  #188-D: enumerated type mixed with another type
+    
+C_ENABLE();
+..\User\Source\main.c(144): warning:  #167-D: argument of type "volatile uint8_t *" is incompatible with parameter of type "uint8_t *"
+                                                                                        PAYLOAD_Process(aaUsbBufferOut);
+..\User\Source\main.c(162): warning:  #223-D: function "TURNING_Respont" declared implicitly
+                                                                                TURNING_Respont();
+..\User\Source\main.c(180): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+                                                                                sprintf(buffer,"A%d P%d \n",asDataHwInfor.aAdd, (int32_t)(1000*asRuningInforCurrent.aPosition));
+..\User\Source\main.c(181): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                                                                                UartSendData(buffer,strlen(buffer));
+..\User\Source\main.c: 13 warnings, 0 errors
+compiling rs485.c...
+..\User\Header\transfer.h(27): warning:  #1-D: last line of file ends without a newline
+  void PAYLOAD_DatasCommingProcess(uint8_t* pData,uint16_t len);
+..\User\Header\product_infor.h(33): warning:  #1-D: last line of file ends without a newline
+  }PRODUCT_INFOR;
+..\User\Header\crc.h(4): warning:  #1-D: last line of file ends without a newline
+  uint8_t crc8(unsigned crc, unsigned char *data, uint32_t len);
+..\User\Source\rs485.c(77): warning:  #940-D: missing return statement at end of non-void function "RS485_TimeInit" 
+  }
+..\User\Source\rs485.c(142): warning:  #940-D: missing return statement at end of non-void function "RS485_Init" 
+  }
+..\User\Source\rs485.c(194): warning:  #223-D: function "STRING_Process" declared implicitly
+        STRING_Process(aaRs485Buffer);
+..\User\Source\rs485.c(208): warning:  #940-D: missing return statement at end of non-void function "UartSendData" 
+  }
+..\User\Source\rs485.c(211): warning:  #188-D: enumerated type mixed with another type
+        
+S485_OUT();
+..\User\Source\rs485.c(213): warning:  #188-D: enumerated type mixed with another type
+        
+S485_IN();
+..\User\Source\rs485.c(214): warning:  #940-D: missing return statement at end of non-void function "RS485_SendAckNACK" 
+  }
+..\User\Source\rs485.c(222): warning:  #188-D: enumerated type mixed with another type
+                                        
+S485_OUT();
+..\User\Source\rs485.c(242): warning:  #940-D: missing return statement at end of non-void function "RS485_Polling" 
+  }
+..\User\Source\rs485.c(217): warning:  #177-D: variable "i"  was declared but never referenced
+        int i,j;
+..\User\Source\rs485.c(217): warning:  #177-D: variable "j"  was declared but never referenced
+        int i,j;
+..\User\Source\rs485.c(248): warning:  #188-D: enumerated type mixed with another type
+        
+S485_OUT();
+..\User\Source\rs485.c(264): warning:  #188-D: enumerated type mixed with another type
+                
+S485_IN();
+..\User\Source\rs485.c(275): warning:  #188-D: enumerated type mixed with another type
+        
+S485_OUT();
+..\User\Source\rs485.c(277): warning:  #1-D: last line of file ends without a newline
+  }
+..\User\Source\rs485.c: 18 warnings, 0 errors
+compiling stm32f1xx_it.c...
+..\User\Header\product_infor.h(33): warning:  #1-D: last line of file ends without a newline
+  }PRODUCT_INFOR;
+..\User\Header\EncoderIncremental.h(21): warning:  #1-D: last line of file ends without a newline
+  void ENCODER_Read(void);
+..\User\Header\CloseLoopControl.h(21): warning:  #1295-D: Deprecated declaration LoopEnable - give arg types
+  void LoopEnable();
+..\User\Header\CloseLoopControl.h(28): warning:  #1-D: last line of file ends without a newline
+  void PidPiPi_PositionControl(void);
+..\User\Header\transfer.h(27): warning:  #1-D: last line of file ends without a newline
+  void PAYLOAD_DatasCommingProcess(uint8_t* pData,uint16_t len);
+..\User\Header\ExternalCounter.h(32): warning:  #1-D: last line of file ends without a newline
+  void ProcessExtEnable(void);
+..\User\Source\stm32f1xx_it.c: 6 warnings, 0 errors
+compiling string_user.c...
+..\User\Header\transfer.h(27): warning:  #1-D: last line of file ends without a newline
+  void PAYLOAD_DatasCommingProcess(uint8_t* pData,uint16_t len);
+..\User\Header\product_infor.h(33): warning:  #1-D: last line of file ends without a newline
+  }PRODUCT_INFOR;
+..\User\Header\crc.h(4): warning:  #1-D: last line of file ends without a newline
+  uint8_t crc8(unsigned crc, unsigned char *data, uint32_t len);
+..\User\Source\string_user.c(45): warning:  #167-D: argument of type "int8_t *" is incompatible with parameter of type "const char *"
+        len = strlen(pData);
+..\User\Source\string_user.c(49): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                if(asDataHwInfor.aAdd != atoi(pTerm+1)){
+..\User\Source\string_user.c(66): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+                                                                        asRuningInforSet.aPosition = strtod(pTerm,&pTerm1);
+..\User\Source\string_user.c(66): warning:  #167-D: argument of type "uint8_t **" is incompatible with parameter of type "char **restrict"
+                                                                        asRuningInforSet.aPosition = strtod(pTerm,&pTerm1);
+..\User\Source\string_user.c(73): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+                                                                        asRuningInforSet.aVelocity = strtod(pTerm,&pTerm1);
+..\User\Source\string_user.c(73): warning:  #167-D: argument of type "uint8_t **" is incompatible with parameter of type "char **restrict"
+                                                                        asRuningInforSet.aVelocity = strtod(pTerm,&pTerm1);
+..\User\Source\string_user.c(80): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+                                                                        asRuningInforSet.aAccel = strtod(pTerm,&pTerm1);
+..\User\Source\string_user.c(80): warning:  #167-D: argument of type "uint8_t **" is incompatible with parameter of type "char **restrict"
+                                                                        asRuningInforSet.aAccel = strtod(pTerm,&pTerm1);
+..\User\Source\string_user.c(92): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                                        timeUpdateToHost = atoi(pTerm);
+..\User\Source\string_user.c(120): warning:  #1-D: last line of file ends without a newline
+  }
+..\User\Source\string_user.c(44): warning:  #177-D: variable "failCmd"  was declared but never referenced
+        uint8_t failCmd =0;     double aTerm; uint8_t len;
+..\User\Source\string_user.c(44): warning:  #177-D: variable "aTerm"  was declared but never referenced
+        uint8_t failCmd =0;     double aTerm; uint8_t len;
+..\User\Source\string_user.c: 15 warnings, 0 errors
+compiling transfer.c...
+..\User\Header\transfer.h(27): warning:  #1-D: last line of file ends without a newline
+  void PAYLOAD_DatasCommingProcess(uint8_t* pData,uint16_t len);
+..\User\Header\crc.h(4): warning:  #1-D: last line of file ends without a newline
+  uint8_t crc8(unsigned crc, unsigned char *data, uint32_t len);
+..\User\Source\transfer.c: 2 warnings, 0 errors
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_adc.c...
+compiling stm32f1xx_hal_adc_ex.c...
+compiling stm32f1xx_hal_can.c...
+compiling stm32f1xx_hal_cec.c...
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM::CMSIS:CORE:5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_STM32F103xB
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Project build/rebuild aborted.
+Build Time Elapsed:  00:01:32
+</pre>
+</body>
+</html>
